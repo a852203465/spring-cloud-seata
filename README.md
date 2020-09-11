@@ -13,13 +13,13 @@
 
 ```yaml
 seata:
-      tx-service-group: my_test_tx_group
+  tx-service-group: my_test_tx_group
      
-    spring:
-      cloud:
-        alibaba:
-          seata:
-            tx-service-group: my_test_tx_group
+spring:
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: my_test_tx_group
 ```
 
     优先读取seata.tx-service-group中的值；
@@ -76,12 +76,6 @@ CREATE TABLE `undo_log`  (
 ) ENGINE = InnoDB AUTO_INCREMENT = 20 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 ```
 
-##  运行测试
-    - 运行 goods-service, order-service 服务
-    
-    - 将  goods-service, order-service  的@GlobalTransactional 注解注释，先后观察数据库插入情况
-    
-    - 使用postman 或者浏览器直接调用 localhost:8083/add 即可查看数据库结果
   
  
     
