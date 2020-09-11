@@ -11,8 +11,7 @@
 
     <modules>
         <module>eureka</module>
-        <module>goods-service</module>
-        <module>order-service</module>
+        <module>seata-at</module>
     </modules>
 
     <properties>
