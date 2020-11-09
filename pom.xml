@@ -12,6 +12,7 @@
     <modules>
         <module>eureka</module>
         <module>seata-at</module>
+        <module>seata-tcc</module>
     </modules>
 
     <properties>
